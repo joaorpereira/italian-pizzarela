@@ -1,8 +1,6 @@
-import { menuList } from './constants'
-import './styles.css'
-
-import HamburgerIcon from '../../assets/hamburger_icon.svg'
 import { useState } from 'react'
+import { menuList } from './constants'
+import HamburgerIcon from '../../assets/hamburger_icon.svg'
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
@@ -14,7 +12,7 @@ function NavBar() {
       <div className='hamburger__link' onClick={toggleMenu}>
         <img src={HamburgerIcon} alt={HamburgerIcon} />
       </div>
-      <a className='menu__link' href='/'>
+      <a className='menu__link' href='/italian-pizzarela'>
         Home
       </a>
       <ul className={showMenu ? 'menu__list active' : 'menu__list'}>

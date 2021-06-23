@@ -1,0 +1,15 @@
+// reset styles
+@import "./global/global";
+
+// components
+@import "./components/navbar";
+@import "./components/cardClient";
+@import "./components/productCard";
+@import "./components/productSizesCard";
+
+// screens
+@import "./screens/about";
+@import "./screens/hero";
+@import "./screens/contact";
+@import "./screens/products";
+@import "./screens/clients";

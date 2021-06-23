@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import useObserver from "../../hooks/useObserver";
-import "./styles.css";
 
 export const options = {
   threshold: 0,

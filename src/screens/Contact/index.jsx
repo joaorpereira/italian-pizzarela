@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 
 import { medias } from "./constants";
 import useForm from "../../hooks/useForm";

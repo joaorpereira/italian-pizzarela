@@ -1,44 +1,43 @@
-import React, { useState, useLayoutEffect } from 'react'
-import './styles.css'
+import React, { useState, useLayoutEffect } from "react";
 
-import CardClient from '../../components/CardClient'
-import { avaliations } from './constants'
+import CardClient from "../../components/CardClient";
+import { avaliations } from "./constants";
 
 const Clients = () => {
-  const [card, setCard] = useState(1)
+  const [card, setCard] = useState(1);
 
   const handleNext = () => {
-    setCard(prev => prev + 1)
-  }
+    setCard(prev => prev + 1);
+  };
 
   const handlePrev = () => {
-    setCard(prev => prev - 1)
-  }
+    setCard(prev => prev - 1);
+  };
 
   const handleSetFirst = () => {
-    setCard(1)
-  }
+    setCard(1);
+  };
 
   const handleSetLast = () => {
-    setCard(avaliations.length - 1)
-  }
+    setCard(avaliations.length - 1);
+  };
 
   useLayoutEffect(() => {
     if (card === avaliations.length - 1) {
-      return handleSetFirst()
+      return handleSetFirst();
     } else if (card < 0) {
-      return handleSetLast()
+      return handleSetLast();
     }
-  }, [card])
+  }, [card]);
 
   return (
-    <section className='clients__section' id='clients'>
-      <div className='clients__container'>
+    <section className="clients__section" id="clients">
+      <div className="clients__container">
         <h2>Avaliações</h2>
-        <span className='arrow left' onClick={handlePrev} />
+        <span className="arrow left" onClick={handlePrev} />
         <div className={`cards__slider active__slide__${card}`}>
           <div
-            className='slides__wrapper '
+            className="slides__wrapper "
             style={{
               transform: `translateX(-${card * (100 / avaliations.length)}%)`,
             }}
@@ -48,10 +47,10 @@ const Clients = () => {
             ))}
           </div>
         </div>
-        <span className='arrow right' onClick={handleNext} />
+        <span className="arrow right" onClick={handleNext} />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;

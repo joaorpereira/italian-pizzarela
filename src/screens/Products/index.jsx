@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./styles.css";
 
 import ProductCard from "../../components/ProductCard";
 import ProductSizesCard from "../../components/ProductSizesCard";

@@ -1,0 +1,30 @@
+@import "../abstracts/variables";
+
+.product__size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  h4 {
+    margin-top: 20px;
+    line-height: 30px;
+    color: $text-secondary;
+  }
+
+  .small {
+    width: 12%;
+    min-width: 120px;
+  }
+
+  .medium {
+    width: 15%;
+    min-width: 160px;
+  }
+
+  .large {
+    min-width: 200px;
+    width: 18%;
+  }
+}

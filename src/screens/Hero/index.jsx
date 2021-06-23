@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./styles.css";
 
 import Pizza from "../../assets/home.png";
 import useObserver from "../../hooks/useObserver";
